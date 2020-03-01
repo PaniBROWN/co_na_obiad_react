@@ -4,13 +4,23 @@ import Dinner from "./Dinner";
 
 class MenuList extends Component{
     state = {
-        recepiesList: [] // wyeksportować listę do komponentu Dinner - robię to za pomocą props
+        recepiesList: [], // wyeksportować listę do komponentu Dinner - robię to za pomocą props
+        dinners: [
+          {
+            recepieId: '1',
+          },
+          {
+            recepieId: '2',
+          },
+          {
+            recepieId: null,
+          }
+        ],
       };
     
       componentDidMount() {
         fetch("http://localhost:4000/recepies")
           .then(response => {
-            console.log(response);
             return response.json();
           })
           .then(data => {
@@ -27,7 +37,14 @@ class MenuList extends Component{
       return (
             <>
                 <div>jestem w MenuList</div>
-                <Dinner/>
+                {this.state.dinners.map((dinner, index) => {
+                  const recepie = this.state.recepiesList.find(
+                    ({ id }) => dinner.recepieId === id,
+                  );
+                  return (
+                    <Dinner recepie={recepie} key={index} />
+                  );
+                })}
                 {/* <Dinner recepiesList={recepiesList}/>  */}
                 {/* recepiesList przekazałam do Dinner w props */}
             </>
