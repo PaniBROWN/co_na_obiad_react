@@ -7,16 +7,28 @@ class MenuList extends Component{
         recepiesList: [],
         dinners: [
           {
-            "recepieID" : "1"
+            "recepieID" : "1",
+            "recepieIngredients" : [],
           },
           {
-            "recepieID" : null
+            "recepieID" : null,
+            "recepieIngredients" : [],
           },
-          
+          {
+            "recepieID" : null,
+            "recepieIngredients" : [],
+          },
+          {
+            "recepieID" : null,
+            "recepieIngredients" : [],
+          },
+          {
+            "recepieID" : null,
+            "recepieIngredients" : [],
+          }
         ]
-        // wyeksportować listę do komponentu Dinner - robię to za pomocą props
       };
-    
+   
       componentDidMount() {
         fetch("http://localhost:4000/recepies")
           .then(response => {
@@ -31,8 +43,26 @@ class MenuList extends Component{
             console.log('błąd', err)});
       }
     
-    render(){
-      // const {recepiesList} = this.state;  
+      setRandomRecepie = (index) => {
+        console.log('ten indeks', index)
+        const list = this.state.recepiesList;
+        const randomIndex = Math.floor(Math.random() * list.length);
+        const randomRecepie = list[randomIndex]; 
+        console.log(randomRecepie)
+
+        const dinnersCopy = [
+          ...this.state.dinners,
+        ]; 
+        dinnersCopy[index] = {
+          recepieID: randomRecepie.id,
+        };
+        console.log({dinnersCopy})
+        this.setState({
+          dinners: dinnersCopy,
+        });
+      }
+
+    render(){ 
       return (
             <>
                 <div>jestem w MenuList</div>
@@ -41,9 +71,17 @@ class MenuList extends Component{
                     ({id}) => dinner.recepieID === id,
                   );
                   return(
-                    <Dinner recepie={recepie} key={index} />
+                    <Dinner recepie={recepie} key={index} onRandom={() => this.setRandomRecepie(index)}/>
                   )
                 })}
+                {/* <button>wyświetl listę zakupów</button>
+                {this.state.dinners.map((dinner, id) => {
+                  return (
+                    <ul>
+                      <li key="id">{dinner.recepieIngredients}</li>
+                    </ul>
+                  )
+                })} */}
             </>
         )
     }
