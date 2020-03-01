@@ -17,13 +17,16 @@ class Dinner extends Component {
     // }
 
     render (){
-        // const {newDinner} = this.state;
-        // const {recepiesList} = this.props;
         return (
             <div>
                 <p>jestem w Dinner</p>
-                {/* <p>{this.state.newDinner}</p> */}
-                {/* <button onClick={this.randomDinner}>losuj</button> */}
+                {this.props.recepie ? (
+                    <p>{this.props.recepie.name}</p> 
+                 ) : (
+                 <p>wylosuj obiad</p> 
+                 )  
+            }
+                <button>losuj</button>
             </div>
         )
     }
