@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import './dinner.scss';
 
 
 class Dinner extends Component {
@@ -20,8 +21,13 @@ class Dinner extends Component {
         // const {newDinner} = this.state;
         // const {recepiesList} = this.props;
         return (
-            <div>
-                <p>jestem w Dinner</p>
+            <div className="Dinner">
+                {this.props.recepie ? (
+                    <p>{this.props.recepie.name}</p>
+                ) : (
+                    <p>Tu jeszcze nie ma przepisu</p>
+                )}
+                
                 {/* <p>{this.state.newDinner}</p> */}
                 {/* <button onClick={this.randomDinner}>losuj</button> */}
             </div>

@@ -2,59 +2,73 @@
   "recepies" :
     [
         {
+            "id": "1",
             "name" : "Kafta z ziemniakami i pomidorami",
             "ingredients" :["ground beef", "onion", "green parsley", "potatoes", "tomatoes", "7 Arab herbs"]
         },
         {
+            "id": "2",
             "name" : "Makaron z tuńczykiem",
             "ingredients" :["tuna in gravy", "garlic", "onion", "tomatoes canned", "olives"]
         },
         {
+            "id": "3",
             "name": "Pierś z kurczaka w miodzie",
             "ingredients":["chicken breast", "onion", "carrot", "zucchini", "orange juice", "lemon", "honey", "mustard", "garlic", "rice"]
         },
         {
+            "id": "4",
             "name": "Zapiekanka z sera i słodkiej papryki",
             "ingredients":["groats", "vegetable stock", "onion", "red pepper", "green pepper", "corn", "garlic", "soy sauce", "dry sherry", "cheese", "milk", "eggs", "tomato", "chives"]
 
         },
         {
+            "id": "5",
             "name": "Penne z gęstym sosem mięsnym",
             "ingredients" : ["onion", "carrot", "chopped beef", "salami", "canned tomatoes", "tomato puree", "penne", "parsley", "cheese"]
         },
         {
+            "id": "6",
             "name": "Tagliatelle z kurczakiem i brokułami",
             "ingredients" : ["tagliatelle", "onion", "red pepper", "thyme", "rosemary", "broccoli", "chicken breast", "dry wine", "cream", "cheese"]
         },
         {
+            "id": "szakszuka-z-feta",
             "name": "Szakszuka z fetą",
             "ingredients":["canned tomatoes", "feta", "eggs", "garlic", "smoked pepper", "hot pepper", "cumin", "green parsley", "red onion", "rice"]
         },
         {
+            "id": "7",
             "name": "Naleśniki",
             "ingredients":["flour", "eggs", "milk", "cream cheese", "jam"]
         },
         {
+            "id": "8",
             "name": "Makaron ze szpinakiem",
             "ingredients":["pasta", "spinach", "feta", "cream", "nutmeg", "Provence herbs", "garlic"]
         },
         {
+            "id": "9",
             "name": "Ratatouille",
             "ingredients":["canned tomatoes", "pepper", "onion", "carrot", "zucchini"]
         },
         {
+            "id": "10",
             "name": "Schab w warzywach",
             "ingredients":["pork", "carrot", "onion", "apple", "beer", "honey", "mustard", "potatoes"]
         },
         {
+            "id": "11",
             "name": "Po arabsku",
             "ingredients":["carrot", "parsley root", "honey", "7 Arabic herbs", "toum", "poultry", "rice"]
         },
         {
+            "id": "12",
             "name": "Makaron na winie",
             "ingredients":["dried tomatoes", "olives", "feta", "onion", "pepper"]
         },
         {
+            "id": "13",
             "name": "Warzywa letnie",
             "ingredients":["summer vegetables", "bulgur", "chicken breast"]
         }
