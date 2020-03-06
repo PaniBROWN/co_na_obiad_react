@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MenuList from './components/MenuList.jsx';
 
-
-import './App.css';
+import "./sass/main.scss";
+// import './App.css';
 
 function App() {
   return (
-    <>
+    <div className="main-container">
       <div> 
         jestem  App
       </div>
@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/" component={MenuList} />
         </Switch>
       </BrowserRouter>
-    </>
+    </div>
    )
 }
   

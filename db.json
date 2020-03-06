@@ -4,73 +4,86 @@
         {
             "id" : "1",
             "name" : "Kafta z ziemniakami i pomidorami",
-            "ingredients" :["ground beef", "onion", "green parsley", "potatoes", "tomatoes", "7 Arab herbs"]
+            "ingredients" :["mielona wołowina, ", "cebula, ", "nać pietruszki, ", "ziemniaki, ", "dojrzałe pomidory, ", "7 ziół arabskich"],
+            "how-to-do" : "napisz sposób wykoanania"
         },
         {
-            "id" : "1",
+            "id" : "2",
             "name" : "Makaron z tuńczykiem",
-            "ingredients" :["tuna in gravy", "garlic", "onion", "tomatoes canned", "olives"]
+            "ingredients" :["tuńczyk w sosie własnym, ", "czosnek, ", "cebula, ", "pomidory w puszce, ", "oliwki"],
+            "how-to-do": "co tu dużo pisać... pokrój, podduś i wymieszaj ;-)"
         },
         {
             "id" : "3",
             "name": "Pierś z kurczaka w miodzie",
-            "ingredients":["chicken breast", "onion", "carrot", "zucchini", "orange juice", "lemon", "honey", "mustard", "garlic", "rice"]
+            "ingredients":["pierś z kurczaka, ", "cebula, ", "marchew, ", "cukinia, ", "sok z pomarańczy, ", "cytryna, ", "miód, ", "musztarda, ", "czosnek, ", "ryż"],
+            "how-to-do": "..."
         },
         {
             "id" : "4",
             "name": "Zapiekanka z sera i słodkiej papryki",
-            "ingredients":["groats", "vegetable stock", "onion", "red pepper", "green pepper", "corn", "garlic", "soy sauce", "dry sherry", "cheese", "milk", "eggs", "tomato", "chives"]
+            "ingredients":["kasza, ", "wywar z warzyw, ", "cebula, ", "papryka zielona, ", "papryka czerwona, ", "kukurydza, ", "czosnek, ", "sos sojowy, ", "wytrawne sherry, ", "ser, ", "mleko, ", "jaja, ", "pomidor, " ,"szczypiorek"],
+            "how-to-do": "..."
 
         },
         {
             "id" : "5",
             "name": "Penne z gęstym sosem mięsnym",
-            "ingredients" : ["onion", "carrot", "chopped beef", "salami", "canned tomatoes", "tomato puree", "penne", "parsley", "cheese"]
+            "ingredients" : ["cebula, ", "marchew, ", "posiekana wołowina z salami, ", "pomidory z puszki, ", "przecier pomidorowy, ", "penne, ", "nać pietruszki, ", "ser"]
         },
         {
             "id" : "6",
             "name": "Tagliatelle z kurczakiem i brokułami",
-            "ingredients" : ["tagliatelle", "onion", "red pepper", "thyme", "rosemary", "broccoli", "chicken breast", "dry wine", "cream", "cheese"]
+            "ingredients" : ["tagliatelle, ", "cebula, ", "czerwona papryka, ", "suszony tymianek, ", "suszony rozmaryn, ", "brokuły, ", "pierś z kurczaka, ", "wytrawne wino, ", "śmietana, ", "ser"],
+            "how-to-do": "..."
         },
         {
             "id" : "7",
             "name": "Szakszuka z fetą",
-            "ingredients":["canned tomatoes", "feta", "eggs", "garlic", "smoked pepper", "hot pepper", "cumin", "green parsley", "red onion", "rice"]
+            "ingredients":["pomidory w puszce, ", "feta, ", "jajka, ", "czosnek, ", "wędzona papryka", "ostra papryka, ", "kmin rzymski, ", "nać pietruszki, ", "czerwona cebula, ", "ryż"],
+            "how-to-do": "..."
         },
         {
             "id" : "8",
             "name": "Naleśniki",
-            "ingredients":["flour", "eggs", "milk", "cream cheese", "jam"]
+            "ingredients":["mąka, ", "jajka, ", "mleko, ", "serek, ", "dżem"],
+            "how-to-do": "wielkiej filozofii nie ma, wiesz co robić..."
         },
         {
             "id" : "9",
             "name": "Makaron ze szpinakiem",
-            "ingredients":["pasta", "spinach", "feta", "cream", "nutmeg", "Provence herbs", "garlic"]
+            "ingredients":["makaron, ", "szpinak, ", "feta, ", "śmietana, ", "gałka muszkatołowa, ", "zioła prowansalskie, ", "czosnek"],
+            "how-to-do": "szkoda pisać, wiesz co robić"
         },
         {
             "id" : "10",
             "name": "Ratatouille",
-            "ingredients":["canned tomatoes", "pepper", "onion", "carrot", "zucchini"]
-        },
-        {
-            "id" : "10",
-            "name": "Schab w warzywach",
-            "ingredients":["pork", "carrot", "onion", "apple", "beer", "honey", "mustard", "potatoes"]
+            "ingredients":["pomidory w puszcze, ", "papryka, ", "cebula, ", "marchew, ", "cukinia" ],
+            "how-to-do": "wymieszaj wszystko i przypraw do smaku ;)"
         },
         {
             "id" : "11",
-            "name": "Po arabsku",
-            "ingredients":["carrot", "parsley root", "honey", "7 Arabic herbs", "toum", "poultry", "rice"]
+            "name": "Schab w warzywach",
+            "ingredients":["schab, ", "marchew, ", "cebula, ", "jabłko, ", "piwo, ", "miód, ", "musztarda, ", "ziemniaki"],
+            "how-to-do": "the stage is yours ;)"
         },
         {
             "id" : "12",
-            "name": "Makaron na winie",
-            "ingredients":["dried tomatoes", "olives", "feta", "onion", "pepper"]
+            "name": "Po arabsku",
+            "ingredients":["marchew, ", "pietruszka, ", "miód, ", "7 ziół arabskich, ", "toum, ", "drób, ", "ryż"],
+            "how-to-do": "the stage is yours ;)"
         },
         {
             "id" : "13",
+            "name": "Makaron na winie",
+            "ingredients":["suszone pomidory, ", "oliwki, ", "feta, ", "cebula, ", "papryka"],
+            "how-to-do": "the stage is yours ;)"
+        },
+        {
+            "id" : "14",
             "name": "Warzywa letnie",
-            "ingredients":["summer vegetables", "bulgur", "chicken breast"]
+            "ingredients":["warzywa letnie, ", "kasza bulgur, ", "pierś z kurczaka"],
+            "how-to-do": "coś wymyślisz..."
         }
     ],
     "ingredients":

@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import Dinner from "./Dinner";
+import Ingredients from "./Ingredients";
 
 
 class MenuList extends Component{
     state = {
         recepiesList: [],
+        ingredientsList: [],
         dinners: [
           {
-            "recepieID" : "1",
+            "recepieID" : null,
             "recepieIngredients" : [],
           },
           {
@@ -32,11 +34,13 @@ class MenuList extends Component{
       componentDidMount() {
         fetch("http://localhost:4000/recepies")
           .then(response => {
+            console.log(response)
             return response.json();
           })
           .then(data => {
             this.setState({
-              recepiesList: data
+              recepiesList: data,
+              ingredientsList: data,
             });
           })
           .catch(err => {
@@ -62,16 +66,24 @@ class MenuList extends Component{
         });
       }
 
+      showIngredients = (index) => {
+        
+      } 
+      
+
     render(){ 
       return (
-            <>
-                <div>jestem w MenuList</div>
+            <div className="menu-list-container">
+                <div className="title">Szef kuchni poleca</div> 
                 {this.state.dinners.map((dinner, index) => {
                   const recepie = this.state.recepiesList.find(
                     ({id}) => dinner.recepieID === id,
                   );
                   return(
-                    <Dinner recepie={recepie} key={index} onRandom={() => this.setRandomRecepie(index)}/>
+                     <div className="menu-list-cont">
+                      <Dinner recepie={recepie} key={index} onRandom={() => this.setRandomRecepie(index)}/>
+                      <Ingredients recepie={recepie} key={index} onShow={() => this.showIngredients(index)}/>
+                     </div> 
                   )
                 })}
                 {/* <button>wyświetl listę zakupów</button>
@@ -82,7 +94,7 @@ class MenuList extends Component{
                     </ul>
                   )
                 })} */}
-            </>
+            </div>
         )
     }
 }

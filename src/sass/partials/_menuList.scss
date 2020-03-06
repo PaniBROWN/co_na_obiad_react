@@ -1,0 +1,29 @@
+
+.menu-list-container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: brown solid 0.25rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: blanchedalmond;
+    height: 75vh;
+    width: 25vw;
+    
+    .title{
+        margin: 0 auto;
+        border: blue solid 1px;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .menu-list-cont{
+        margin: 0 auto;
+        text-align: center;
+
+        .meal{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
