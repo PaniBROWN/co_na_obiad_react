@@ -5,87 +5,89 @@
             "id" : "1",
             "name" : "Kafta z ziemniakami i pomidorami",
             "ingredients" :["mielona wołowina, ", "cebula, ", "nać pietruszki, ", "ziemniaki, ", "dojrzałe pomidory, ", "7 ziół arabskich"],
-            "how-to-do" : "napisz sposób wykoanania"
+            "preparation" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         {
             "id" : "2",
             "name" : "Makaron z tuńczykiem",
             "ingredients" :["tuńczyk w sosie własnym, ", "czosnek, ", "cebula, ", "pomidory w puszce, ", "oliwki"],
-            "how-to-do": "co tu dużo pisać... pokrój, podduś i wymieszaj ;-)"
+            "preparation": "co tu dużo pisać... pokrój, podduś i wymieszaj ;-)"
         },
         {
             "id" : "3",
             "name": "Pierś z kurczaka w miodzie",
             "ingredients":["pierś z kurczaka, ", "cebula, ", "marchew, ", "cukinia, ", "sok z pomarańczy, ", "cytryna, ", "miód, ", "musztarda, ", "czosnek, ", "ryż"],
-            "how-to-do": "..."
+            "preparation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         {
             "id" : "4",
             "name": "Zapiekanka z sera i słodkiej papryki",
             "ingredients":["kasza, ", "wywar z warzyw, ", "cebula, ", "papryka zielona, ", "papryka czerwona, ", "kukurydza, ", "czosnek, ", "sos sojowy, ", "wytrawne sherry, ", "ser, ", "mleko, ", "jaja, ", "pomidor, " ,"szczypiorek"],
-            "how-to-do": "..."
+            "preparation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
         },
         {
             "id" : "5",
             "name": "Penne z gęstym sosem mięsnym",
-            "ingredients" : ["cebula, ", "marchew, ", "posiekana wołowina z salami, ", "pomidory z puszki, ", "przecier pomidorowy, ", "penne, ", "nać pietruszki, ", "ser"]
+            "ingredients" : ["cebula, ", "marchew, ", "posiekana wołowina z salami, ", "pomidory z puszki, ", "przecier pomidorowy, ", "penne, ", "nać pietruszki, ", "ser"],
+            "preparation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         {
             "id" : "6",
             "name": "Tagliatelle z kurczakiem i brokułami",
             "ingredients" : ["tagliatelle, ", "cebula, ", "czerwona papryka, ", "suszony tymianek, ", "suszony rozmaryn, ", "brokuły, ", "pierś z kurczaka, ", "wytrawne wino, ", "śmietana, ", "ser"],
-            "how-to-do": "..."
+            "preparation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         {
             "id" : "7",
             "name": "Szakszuka z fetą",
             "ingredients":["pomidory w puszce, ", "feta, ", "jajka, ", "czosnek, ", "wędzona papryka", "ostra papryka, ", "kmin rzymski, ", "nać pietruszki, ", "czerwona cebula, ", "ryż"],
-            "how-to-do": "..."
+            "preparation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         {
             "id" : "8",
             "name": "Naleśniki",
             "ingredients":["mąka, ", "jajka, ", "mleko, ", "serek, ", "dżem"],
-            "how-to-do": "wielkiej filozofii nie ma, wiesz co robić..."
+            "preparation": "wielkiej filozofii nie ma, wiesz co robić..."
         },
         {
             "id" : "9",
             "name": "Makaron ze szpinakiem",
             "ingredients":["makaron, ", "szpinak, ", "feta, ", "śmietana, ", "gałka muszkatołowa, ", "zioła prowansalskie, ", "czosnek"],
-            "how-to-do": "szkoda pisać, wiesz co robić"
+            "preparation": "szkoda pisać, wiesz co robić"
         },
         {
             "id" : "10",
             "name": "Ratatouille",
             "ingredients":["pomidory w puszcze, ", "papryka, ", "cebula, ", "marchew, ", "cukinia" ],
-            "how-to-do": "wymieszaj wszystko i przypraw do smaku ;)"
+            "preparation": "wymieszaj wszystko i przypraw do smaku ;)"
         },
         {
             "id" : "11",
             "name": "Schab w warzywach",
             "ingredients":["schab, ", "marchew, ", "cebula, ", "jabłko, ", "piwo, ", "miód, ", "musztarda, ", "ziemniaki"],
-            "how-to-do": "the stage is yours ;)"
+            "preparation": "the stage is yours ;)"
         },
         {
             "id" : "12",
             "name": "Po arabsku",
             "ingredients":["marchew, ", "pietruszka, ", "miód, ", "7 ziół arabskich, ", "toum, ", "drób, ", "ryż"],
-            "how-to-do": "the stage is yours ;)"
+            "preparation": "the stage is yours ;)"
         },
         {
             "id" : "13",
             "name": "Makaron na winie",
             "ingredients":["suszone pomidory, ", "oliwki, ", "feta, ", "cebula, ", "papryka"],
-            "how-to-do": "the stage is yours ;)"
+            "preparation": "the stage is yours ;)"
         },
         {
             "id" : "14",
             "name": "Warzywa letnie",
             "ingredients":["warzywa letnie, ", "kasza bulgur, ", "pierś z kurczaka"],
-            "how-to-do": "coś wymyślisz..."
+            "preparation": "coś wymyślisz..."
         }
     ],
+    
     "ingredients":
       [ 
         {

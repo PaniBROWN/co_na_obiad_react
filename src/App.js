@@ -8,9 +8,6 @@ import "./sass/main.scss";
 function App() {
   return (
     <div className="main-container">
-      <div> 
-        jestem  App
-      </div>
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={MenuList} />

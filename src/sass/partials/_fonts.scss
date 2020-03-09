@@ -1,13 +1,59 @@
+@mixin big {
+    @media (min-width: 701px){
+        @content;
+    }
+}
+
 html{
     font-size: 12px;
 }
 
 body {
-    font-family: 'Just Another Hand', cursive;
+    font-family: 'Lora', serif;
     font-size: 1rem;
     color: lighten($color: hsl(118, 43%, 44%), $amount: 0);
 }
 
+.logo{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3rem;
+    @include big {
+        font-size: 5rem;
+    }
+}
 .menu-list-container {
     font-size: 2rem;
+
+    .title {
+        font-family: 'Just Another Hand', cursive;
+        font-size: 4rem;
+        font-style: italic;
+        @include big{
+            letter-spacing: 0.5rem;
+        }
+    }
+
+    .meal {
+        letter-spacing: 0.2rem;
+        font-size: 1rem;
+        @include big{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.dinner-btn, .ingredients-btn{
+    color: blanchedalmond;
+    font-family:'Just Another Hand', cursive;
+    font-size: 2rem;
+}
+
+.recepie{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.5rem;
+
+    .name{
+        font-size: 2rem;
+        font-style: italic;
+    }
 }

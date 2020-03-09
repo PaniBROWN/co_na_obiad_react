@@ -1,7 +1,14 @@
-.main-container {
+@mixin big {
+    @media (min-width: 701px){
+        @content;
+    }
+}
+
+body {
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
     background-image: url("../../images/mobile.jpg");
     background-position: center;
     background-size: contain ;
@@ -9,5 +16,8 @@
     background-color: red($color: #000000);
     height: 100vh;
     
+    @include big{
+        background-image: url("../../images/biggest.jpg")
+    }
     
 }

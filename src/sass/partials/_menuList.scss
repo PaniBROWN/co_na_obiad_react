@@ -1,29 +1,83 @@
 
-.menu-list-container{
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem;
-    border: brown solid 0.25rem;
-    border-radius: 1rem;
-    background-color: black;
-    color: blanchedalmond;
-    height: 75vh;
-    width: 25vw;
+@mixin big {
+    @media (min-width: 701px){
+        @content;
+    }
+}
+
+.logo{
+    text-align: center;
+    justify-content: center;
+    color:#145737;
+    @include big{
+        color: rgb(172, 49, 49);
+    }
     
-    .title{
-        margin: 0 auto;
-        border: blue solid 1px;
-        max-width: 200px;
-        text-align: center;
+}
+.menu-list-container{
+    max-width: 700px;
+    min-width: 200px;
+    margin: 0 auto;
+    // padding: 1rem;
+    
+    border: grayscale($color: #000000) ridge 0.75rem;
+    border-radius: 0.2rem;
+    background-color: black;
+    color:blanchedalmond;
+    height: 80vh;
+    width: 25rem;
+    
+    @include big{
+        height: 80vh;
+        width: 50rem;
     }
 
+    .title{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
     .menu-list-cont{
         margin: 0 auto;
         text-align: center;
 
         .meal{
-            display: flex;
-            justify-content: space-evenly;
+           
+            // border: blue solid 1px;
+            height: 6rem;
+            padding: 1rem;
+            @include big{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        }
+
+        .recepie{
+            display: none;
+            // border: pink solid 2px;
+            border-radius: 0.4rem;
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 25%; /* Full width */
+            height: 100vh; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: hsl(60, 56%, 65%);
+            // background-color: rgb(0,0,0); /* Fallback color */
+            // background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding: 1rem;
+            
+            .name, .ingredients, .preparation{
+                color: black;
+            }
+
+            .ingredients{
+                padding: 1rem;
+                text-align: left;
+            }
         }
     }
 }

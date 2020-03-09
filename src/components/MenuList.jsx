@@ -5,6 +5,7 @@ import Ingredients from "./Ingredients";
 
 class MenuList extends Component{
     state = {
+        isOn: false,
         recepiesList: [],
         ingredientsList: [],
         dinners: [
@@ -40,8 +41,7 @@ class MenuList extends Component{
           .then(data => {
             this.setState({
               recepiesList: data,
-              ingredientsList: data,
-            });
+              });
           })
           .catch(err => {
             console.log('błąd', err)});
@@ -66,14 +66,11 @@ class MenuList extends Component{
         });
       }
 
-      showIngredients = (index) => {
-        
-      } 
-      
-
-    render(){ 
+      render(){ 
       return (
-            <div className="menu-list-container">
+        <div className="container">
+          <header className="logo">Kochanie... co na obiad?</header>
+          <div className="menu-list-container">
                 <div className="title">Szef kuchni poleca</div> 
                 {this.state.dinners.map((dinner, index) => {
                   const recepie = this.state.recepiesList.find(
@@ -81,20 +78,14 @@ class MenuList extends Component{
                   );
                   return(
                      <div className="menu-list-cont">
-                      <Dinner recepie={recepie} key={index} onRandom={() => this.setRandomRecepie(index)}/>
-                      <Ingredients recepie={recepie} key={index} onShow={() => this.showIngredients(index)}/>
+                      <Dinner recepie={recepie} key={index} onRandom={() => this.setRandomRecepie(index)} />
+                      <Ingredients recepie={recepie} key={index} />
                      </div> 
                   )
                 })}
-                {/* <button>wyświetl listę zakupów</button>
-                {this.state.dinners.map((dinner, id) => {
-                  return (
-                    <ul>
-                      <li key="id">{dinner.recepieIngredients}</li>
-                    </ul>
-                  )
-                })} */}
             </div>
+        </div>
+            
         )
     }
 }
