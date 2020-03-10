@@ -16,7 +16,7 @@ class Dinner extends Component {
                 
             {this.props.recepie ? (
                 <div className="btns">
-                    <button className="dinner-btn" > przepis </button>
+                    <button className="dinner-btn" onClick={this.props.onShow}> przepis </button>
                     <button className="dinner-btn" onClick={this.props.onRandom}>losuj</button>
                 </div>
                 ) : (

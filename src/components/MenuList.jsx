@@ -5,7 +5,7 @@ import Ingredients from "./Ingredients";
 
 class MenuList extends Component{
     state = {
-        isOn: false,
+        seen: false,
         recepiesList: [],
         ingredientsList: [],
         dinners: [
@@ -66,6 +66,18 @@ class MenuList extends Component{
         });
       }
 
+      showModal = (index) => {
+        this.setState({
+          seen: true
+        })
+      }
+
+      hideModal = (index) => {
+        this.setState({
+          seen: false,
+        })
+      }
+
       render(){ 
       return (
         <div className="container">
@@ -78,8 +90,8 @@ class MenuList extends Component{
                   );
                   return(
                      <div className="menu-list-cont">
-                      <Dinner recepie={recepie} key={index} onRandom={() => this.setRandomRecepie(index)} />
-                      <Ingredients recepie={recepie} key={index} />
+                      <Dinner recepie={recepie} key={index} onRandom={() => this.setRandomRecepie(index)} onShow={() => this.showModal(index)}/>
+                      {this.state.seen ? <Ingredients recepie={recepie} key={index} onShow={() => this.showModal(index)} onHide={() => this.hideModal(index)}/> : null}
                      </div> 
                   )
                 })}

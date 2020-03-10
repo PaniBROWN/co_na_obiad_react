@@ -11,7 +11,7 @@ body {
     padding-bottom: 5rem;
     background-image: url("../../images/mobile.jpg");
     background-position: center;
-    background-size: contain ;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: red($color: #000000);
     height: 100vh;

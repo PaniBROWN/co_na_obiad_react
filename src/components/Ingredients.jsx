@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 
 class Ingredients extends Component{
-    state = {
-        isOn: false
-    }
-    hideModal = () => {
-        console.log("klik zamknij")
-        this.setState({
-            isOn: true,
-        })
-    }
+
     
     render(){
         
@@ -31,7 +23,7 @@ class Ingredients extends Component{
                                     )
                             }</div>
                             <p className="preparation">{this.props.recepie.preparation}</p>
-                            <button className="dinner-btn" onClick={this.hideModal}>zamknij</button>
+                            <button className="dinner-btn" onClick={this.props.onHide}>zamknij</button>
                         </div>)  
                         : <div/>}  
                 
