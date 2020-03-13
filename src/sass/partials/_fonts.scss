@@ -14,11 +14,18 @@ body {
     color: lighten($color: hsl(118, 43%, 44%), $amount: 0);
 }
 
-.logo{
+.navbar-item{
+    font-family: 'Gochi Hand', cursive;
+    @include big{
+        font-size: 2rem;
+    }
+}
+
+.logo {
     font-family: 'Gochi Hand', cursive;
     font-size: 3rem;
     @include big {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 .menu-list-container {
