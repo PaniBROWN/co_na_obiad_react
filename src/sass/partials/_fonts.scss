@@ -16,6 +16,7 @@ body {
 
 .navbar-item{
     font-family: 'Gochi Hand', cursive;
+    text-decoration-line: none;
     @include big{
         font-size: 2rem;
     }
@@ -55,6 +56,11 @@ body {
     font-size: 2rem;
 }
 
+.close-btn{
+    font-family:'Just Another Hand', cursive;
+    font-size: 2rem;  
+}
+
 .recepie{
     font-family: 'Gochi Hand', cursive;
     font-size: 1.5rem;
@@ -62,5 +68,15 @@ body {
     .name{
         font-size: 2rem;
         font-style: italic;
+    }
+}
+
+.title {
+    font-family: 'Just Another Hand';
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    @include big{
+        letter-spacing: 0.5rem;
     }
 }

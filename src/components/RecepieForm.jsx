@@ -38,9 +38,9 @@ class RecepieForm extends Component {
   render() {
     return (
       <form>
-        <div>
-          <p>Dodaj przepis</p>
-          <div>
+        <div className="recepie-form">
+          <p className="title">Dodaj przepis</p>
+          <div className="inputForm">
             <input
               className="input"
               type="text"
@@ -53,7 +53,7 @@ class RecepieForm extends Component {
               }}
             />
           </div>
-          <div>
+          <div className="inputForm">
             <input
               className="input"
               type="text"
@@ -66,7 +66,7 @@ class RecepieForm extends Component {
               }}
             />
           </div>
-          <div>
+          <div className="inputForm">
             <textarea
               className="input textarea"
               type="text"
@@ -79,8 +79,9 @@ class RecepieForm extends Component {
               }}
             />
           </div>
-          <div>
+          <div className="inputForm">
             <button
+              className="close-btn"
               type="submit"
               onClick={e => {
                 this.createRecepie(e);
