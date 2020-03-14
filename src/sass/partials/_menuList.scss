@@ -6,10 +6,33 @@
 }
 
 .navbar-start{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 
     .navbar-item{
         text-align: center;       
+    }
+    .navbar-item:hover{
+        color: black;
+        
+    }
+
+    .navbar-link{
+        border: #145737 solid 2px;
+        border-radius: 6rem;
+        padding: 1rem;
+        color: #145737;;
+        
+        text-align: center;
+        @include big{
+            color: rgb(172, 49, 49);
+            border: rgb(172, 49, 49) solid 2px;
+            border-radius: 4rem;
+        }
+    }
+
+    .navbar-link:hover{
+        border: black solid 2px;
     }
 
     .logo{
@@ -20,8 +43,8 @@
             color: rgb(172, 49, 49);
             margin: 0 3rem;
         }
-        
     }
+    
 }
 
 .menu-list-container{
@@ -70,7 +93,7 @@
             padding: 1rem;
             @include big{
                 left: 0;
-                top: 5.95rem;
+                top: 5rem;
                 width: 24%;
                 height: 80vh;
                 margin: 1rem;

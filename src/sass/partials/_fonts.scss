@@ -22,11 +22,16 @@ body {
     }
 }
 
+.navbar-link{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .logo {
     font-family: 'Gochi Hand', cursive;
     font-size: 3rem;
     @include big {
-        font-size: 4rem;
+        font-size: 4.2rem;
     }
 }
 .menu-list-container {

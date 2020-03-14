@@ -5,7 +5,16 @@ class Navigation extends Component {
   render() {
     return (
       <nav className="navbar">
+        
         <div className="navbar-start">
+          <NavLink
+            exact
+            to="/"
+            className="navbar-link navbar-item"
+            activeClassName={"has-text-primary"}
+          >
+            strona główna
+          </NavLink>
           <NavLink
             exact
             to="/"
@@ -17,10 +26,10 @@ class Navigation extends Component {
           <NavLink
             exact
             to="/dodaj"
-            className="navbar-item"
+            className="navbar-item navbar-link"
             activeClassName={"has-text-primary"}
           >
-            Dodaj przepis
+            + dodaj przepis 
           </NavLink>
         </div>
       </nav>

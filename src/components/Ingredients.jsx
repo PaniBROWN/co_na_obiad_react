@@ -6,6 +6,12 @@ class Ingredients extends Component {
       <div>
         {this.props.recepie ? (
           <div className="recepie">
+            <button
+              className="dinner-btn close-btn btn"
+              onClick={this.props.onHide}
+            >
+              x
+            </button>
             <p className="name">{this.props.recepie.name}</p>
             <div className="ingredients">
               {this.props.recepie.ingredients.map((ingredient, index) => {
@@ -19,12 +25,7 @@ class Ingredients extends Component {
               })}
             </div>
             <p className="preparation">{this.props.recepie.preparation}</p>
-            <button
-              className="dinner-btn close-btn"
-              onClick={this.props.onHide}
-            >
-              zamknij
-            </button>
+            
           </div>
         ) : (
           <div />

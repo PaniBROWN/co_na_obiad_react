@@ -31,9 +31,9 @@ class RecepieForm extends Component {
       body: JSON.stringify(recepie)
     })
       .then(response => response.json())
-      // .then(newRecepie => {
-      //   this.props.onCreateNewRecepie(newRecepie); //onCreateNewRecepie !!!
-      // });
+      .then(newRecepie => {
+        this.appendNewRecepie(newRecepie); //onCreateNewRecepie !!!
+      });
   };
   render() {
     return (
@@ -81,7 +81,7 @@ class RecepieForm extends Component {
           </div>
           <div className="inputForm">
             <button
-              className="close-btn"
+              className="btn"
               type="submit"
               onClick={e => {
                 this.createRecepie(e);
