@@ -8,10 +8,10 @@ class RecepieForm extends Component {
     preparation: ""
   };
 
-  appendNewRecepie = (newRecepie) => {
+  appendNewRecepie = (recepie) => {
     this.setState({
       name: this.state.name,
-      ingredients: [...this.state.ingredients],
+      ingredients: this.state.ingredients,
       preparation: this.state.preparation,
     })
   }
@@ -26,13 +26,13 @@ class RecepieForm extends Component {
     fetch("http://localhost:4000/recepies", {
       method: "POST",
       headers: {
-        "Content-Type": "aplication/json"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(recepie)
     })
       .then(response => response.json())
       .then(newRecepie => {
-        this.appendNewRecepie(newRecepie); //onCreateNewRecepie !!!
+        this.appendNewRecepie(newRecepie);
       });
   };
   render() {
@@ -85,6 +85,7 @@ class RecepieForm extends Component {
               type="submit"
               onClick={e => {
                 this.createRecepie(e);
+                alert("przepis dodany")
               }}
             >
               Dodaj przepis

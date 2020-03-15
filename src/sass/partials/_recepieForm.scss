@@ -13,6 +13,14 @@
         .textarea{
             height: 6rem;
         }
+
+        .unvisible{
+            display: none;
+
+            &.visible {
+                display: block;
+              }
+        }
     }
     
     
